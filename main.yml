@@ -34,6 +34,9 @@
       when: configure_terminal
       tags: ['terminal']
 
+    - import_tasks: tasks/powerlevel10k.yml
+      tags: ['powerlevel10k']
+
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']
@@ -44,6 +47,8 @@
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ['sublime-text']
+    
+
 
     - block:
         - name: Run configured post-provision ansible task files.

@@ -1,0 +1,7 @@
+---
+- name: Clone the repository.
+  git:
+    repo: "https://github.com/romkatv/powerlevel10k.git"
+    dest: "{{ lookup('env', 'HOME') }}/powerlevel10k"
+    depth: 1
+  become: false

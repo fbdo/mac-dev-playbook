@@ -12,9 +12,31 @@ dockitems_remove:
   - TV
   - Podcasts
   - 'App Store'
+  - Messages
+  - Mail
+  - Maps
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Music
+  - Keynote
+  - Numbers
+  - Pages
+  - Photos
 dockitems_persist:
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app/"
+    pos: 2
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 3
+  - name: "Terminal"
+    path: "/Applications/Terminal.app/"
+    pos: 5
+  - name: "Fork"
+    path: "/Applications/Fork.app/"
     pos: 4
 
 configure_sudoers: false
@@ -62,18 +84,12 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  # - chromedriver
   - docker
-  # - dropbox
-  # - firefox
+  - visual-studio-code
   - google-chrome
   - handbrake
   - licecap
-  # - sequel-ace
-  # - slack
-  # - sublime-text
-  # - transmit
-  # - vagrant
+  - fork
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

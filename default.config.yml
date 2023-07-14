@@ -55,6 +55,7 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+  - .p10k.zsh
 
 homebrew_installed_packages:
   - bash-completion
@@ -77,6 +78,9 @@ homebrew_installed_packages:
   - wrk
   - zsh-history-substring-search
   - rustup
+  - awscli
+  - cfn-lint
+  - jq
 
 homebrew_taps:
   - homebrew/core
@@ -90,6 +94,10 @@ homebrew_cask_apps:
   - handbrake
   - licecap
   - fork
+  - vlc
+  - drawio
+  - postman
+  - docker
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
